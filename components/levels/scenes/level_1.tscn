@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4aalswelxsel"]
+
+[ext_resource type="PackedScene" uid="uid://c4rukx1r83420" path="res://components/characters/scenes/messi.tscn" id="1_1twxd"]
+[ext_resource type="PackedScene" uid="uid://dl17e4371ys60" path="res://components/vehicles/scenes/car.tscn" id="2_5qk5g"]
+[ext_resource type="PackedScene" uid="uid://ccblsr7pyltnk" path="res://components/vehicles/scenes/taxi.tscn" id="3_gq8a3"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Messi" parent="." instance=ExtResource("1_1twxd")]
+position = Vector2(597, 498)
+scale = Vector2(0.1, 0.1)
+
+[node name="Car" parent="." instance=ExtResource("2_5qk5g")]
+position = Vector2(392, 549)
+scale = Vector2(0.7, 0.7)
+
+[node name="Taxi" parent="." instance=ExtResource("3_gq8a3")]
+position = Vector2(860, 571)
+scale = Vector2(2.3, 2.3)

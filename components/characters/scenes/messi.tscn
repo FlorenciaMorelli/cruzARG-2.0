@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4rukx1r83420"]
+
+[ext_resource type="Texture2D" uid="uid://dqnr3jxpt18ux" path="res://assets/sprites/messi.png" id="1_k8bgu"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ayb7o"]
+radius = 158.0
+height = 1120.0
+
+[node name="Messi" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_k8bgu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ayb7o")
